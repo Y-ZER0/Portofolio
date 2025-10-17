@@ -1,0 +1,108 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 5rem;
+  right: 2rem;
+  gap: 2rem;
+  height: 90vh;
+  width: 100%;
+  padding: 0 2rem;
+  background: linear-gradient(180deg, hsl(348 83% 10%) 0%, hsl(0 0% 7%) 100%);
+  color: #d3d3d3;
+}
+
+.about-title {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.about-title .accent {
+  color: hsl(348 83% 47%);
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  max-width: 60ch;
+  text-align: center;
+  line-height: 1.75;
+  color: #c7c7c7;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 240px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  color: hsl(348 83% 47%);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-title {
+  margin: 0.25rem 0 0 0;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.skill-content {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.95rem;
+  text-align: left;
+  color: #c7c7c7;
+}
+
+/* Icon colors */
+.icon-frontend {
+  color: #ef4444; /* red */
+}
+
+.icon-backend {
+  color: #8b5cf6; /* purple */
+}
+
+.icon-database {
+  color: #eab308; /* yellow */
+}
