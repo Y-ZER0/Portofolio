@@ -16,7 +16,6 @@
 }
 
 .header-scrolled {
-  padding: 1.5rem 14rem;
   background-color: #121212;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -35,11 +34,12 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .logo:hover {
   opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .logo:focus-visible {
@@ -93,13 +93,7 @@
   transform: scaleX(1);
 }
 
-.nav-link.active {
-  color: hsl(348 83% 47%);
-}
-
-.nav-link.active::after {
-  transform: scaleX(1);
-}
+/* Removed active state styling to prevent red color on scroll */
 
 .nav-link:focus-visible {
   outline: 2px solid hsl(348 83% 47%);

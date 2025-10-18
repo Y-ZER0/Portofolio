@@ -3,26 +3,9 @@ import "./Header.css";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-
-      // Detect active section for highlighting (skip on initial load)
-      if (window.scrollY > 0) {
-        const sections = ["home", "about", "skills", "projects", "contact"];
-        const current = sections.find((section) => {
-          const element = document.getElementById(section);
-          if (element) {
-            const rect = element.getBoundingClientRect();
-            return rect.top <= 100 && rect.bottom >= 100;
-          }
-          return false;
-        });
-
-        if (current) setActiveSection(current);
-      }
     };
 
     handleScroll();
@@ -61,10 +44,7 @@ export default function Header() {
             <li key={section}>
               <button
                 onClick={() => scrollToSection(section)}
-                className={`nav-link ${
-                  activeSection === section ? "active" : ""
-                }`}
-                aria-current={activeSection === section ? "page" : undefined}
+                className="nav-link"
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </button>

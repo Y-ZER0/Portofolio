@@ -5,3 +5,10 @@ body {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+
+.decorative-divider {
+  width: 10rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, #ef4444, #a855f7);
+  margin: 0 auto 3rem;
+}

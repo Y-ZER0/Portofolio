@@ -1,0 +1,90 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #d3d3d3;
+  margin-top: 4rem;
+}
+
+.skills-title {
+  margin: 0 0 1rem 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.skills-cards {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.skills-cards > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-cards > div > div {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+ul li {
+  background-color: transparent;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  cursor: default;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tech-item {
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.tech-item:hover {
+  border-color: hsl(348, 83%, 47%);
+  background-color: rgba(220, 38, 38, 0.1);
+  transform: translateY(-2px);
+}
+
+.tech-title {
+  color: hsl(348, 83%, 47%);
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 0;
+  font-weight: 700;
+}
+
+.tech-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem;
+  border-radius: 1rem;
+  transition: border-color 0.3s ease;
+  font-weight: 700;
+}
+
+.tech-card:hover {
+  border-color: hsl(348, 83%, 47%);
+}

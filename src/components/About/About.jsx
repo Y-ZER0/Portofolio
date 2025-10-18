@@ -1,43 +1,43 @@
 import "./About.css";
 import SkillCards from "./SkillCards";
 import { Code2, Server, Database } from "lucide-react";
+import profileImage from "../../assets/ZER0PFP.jpg";
 
 const skills = [
   {
     name: "Frontend",
     icon: Code2,
     content:
-      "Crafting responsive, accessible UIs with React and modern web tooling.",
+      "Crafting responsive and interactive user interfaces with React.js and modern web technologies",
   },
   {
     name: "Backend",
     icon: Server,
     content:
-      "Designing secure, scalable APIs with ASP.NET Core and clean architecture.",
+      "Building secure and scalable APIs with ASP.NET Core and implementing robust business logic",
   },
   {
     name: "Database",
     icon: Database,
     content:
-      "Modeling data and optimizing queries for reliability and performance.",
+      "Designing efficient database schemas and optimizing queries with PostgreSQL",
   },
 ];
 
 export default function About() {
   return (
     <div className="about">
-      <img
-        src="/src/assets/ZER0PFP.jpg"
-        alt="ZER0 Profile"
-        className="about-img"
-      />
+      <img src={profileImage} alt="ZER0 Profile" className="about-img" />
       <h1 className="about-title">
         About <span className="accent">Me</span>
       </h1>
+
       <p className="about-text">
-        I build thoughtful, end‑to‑end web experiences. From expressive React
-        frontends to resilient ASP.NET Core APIs and tuned PostgreSQL databases,
-        I focus on clarity, maintainability, and performance.
+        I'm a passionate full-stack developer specializing in building modern,
+        scalable web applications. With expertise in React.js for dynamic
+        frontends, ASP.NET Core for robust backends, and PostgreSQL for reliable
+        data management, I create end-to-end solutions that deliver exceptional
+        user experiences.
       </p>
       <SkillCards skills={skills} />
     </div>

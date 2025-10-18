@@ -1,5 +1,5 @@
 import "./Hero.css";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
   const scrollToProjects = () => {
@@ -39,7 +39,7 @@ export default function Hero() {
 
         <div className="hero-social">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Y-ZER0"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my GitHub profile"
@@ -48,7 +48,7 @@ export default function Hero() {
             <Github size={24} />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/yousef-abu-nimreh-04781232b/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my LinkedIn profile"
@@ -57,7 +57,7 @@ export default function Hero() {
             <Linkedin size={24} />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="yousef.nimreh@gmail.com"
             aria-label="Send me an email"
             className="social-link"
           >
