@@ -26,7 +26,7 @@ const skills = [
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <img src={profileImage} alt="ZER0 Profile" className="about-img" />
       <h1 className="about-title">
         About <span className="accent">Me</span>

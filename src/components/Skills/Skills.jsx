@@ -38,14 +38,17 @@ const techStack = [
 
 export default function Skills() {
   return (
-    <div className="skills">
-      <h1 className="skills-title">
-        <span style={{ color: "hsl(348 83% 47%)" }}>Skills</span> & Technologies
-      </h1>
-      <div className="decorative-divider" />
-      <div className="skills-cards">
-        <TechCards techStack={techStack} />
+    <section id="skills">
+      <div className="skills">
+        <h1 className="skills-title">
+          <span style={{ color: "hsl(348 83% 47%)" }}>Skills</span> &
+          Technologies
+        </h1>
+        <div className="decorative-divider" />
+        <div className="skills-cards">
+          <TechCards techStack={techStack} />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
